@@ -1,1 +1,13 @@
 
+def calculate_area(side_length):
+    return side_length * side_length
+
+try:
+    side_length = float(input("Enter the side length of the square: "))
+    if side_length <= 0:
+        print("Please enter a positive value for the side length.")
+    else:
+        area = calculate_area(side_length)
+        print(f"The area of the square with side length {side_length} is: {area}")
+except ValueError:
+    print("Invalid input. Please enter a valid number for the side length.")
